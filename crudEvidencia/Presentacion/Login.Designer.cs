@@ -40,12 +40,12 @@
             this.CBrol = new System.Windows.Forms.ComboBox();
             this.rolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ejercicioAlcaldiaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ejercicioAlcaldiaDataSet = new crudEvidencia.EjercicioAlcaldiaDataSet();
+//            this.ejercicioAlcaldiaDataSet = new crudEvidencia.EjercicioAlcaldiaDataSet();
             this.label4 = new System.Windows.Forms.Label();
-            this.rolTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.RolTableAdapter();
+         
             ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).BeginInit();
+
             this.SuspendLayout();
             // 
             // TBcontrasenia
@@ -140,13 +140,10 @@
             // 
             // ejercicioAlcaldiaDataSetBindingSource
             // 
-            this.ejercicioAlcaldiaDataSetBindingSource.DataSource = this.ejercicioAlcaldiaDataSet;
             this.ejercicioAlcaldiaDataSetBindingSource.Position = 0;
             // 
             // ejercicioAlcaldiaDataSet
             // 
-            this.ejercicioAlcaldiaDataSet.DataSetName = "EjercicioAlcaldiaDataSet";
-            this.ejercicioAlcaldiaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label4
             // 
@@ -159,13 +156,11 @@
             // 
             // rolTableAdapter
             // 
-            this.rolTableAdapter.ClearBeforeFill = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::crudEvidencia.Properties.Resources.html5_css_login_forms1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(799, 475);
             this.Controls.Add(this.label4);
@@ -183,9 +178,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).EndInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,9 +198,9 @@
         private System.Windows.Forms.ComboBox CBrol;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.BindingSource ejercicioAlcaldiaDataSetBindingSource;
-        private EjercicioAlcaldiaDataSet ejercicioAlcaldiaDataSet;
+       
         private System.Windows.Forms.BindingSource rolBindingSource;
-        private EjercicioAlcaldiaDataSetTableAdapters.RolTableAdapter rolTableAdapter;
+ 
     }
 }
 

@@ -3,8 +3,13 @@ C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\crudEvidencia.exe
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\crudEvidencia.pdb
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.csprojResolveAssemblyReference.cache
-C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Form1.resources
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Properties.Resources.resources
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.csproj.GenerateResource.Cache
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.exe
 C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.pdb
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.SplashScreen.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Login.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\Logica.dll
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\Datos.dll
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\Logica.pdb
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\bin\Debug\Datos.pdb

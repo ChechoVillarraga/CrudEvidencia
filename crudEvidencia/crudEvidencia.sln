@@ -1,7 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crudEvidencia", "crudEvidencia\crudEvidencia.csproj", "{FA88FF03-4E60-45FD-AE39-8ED588DD7129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{266D7A4A-DC76-407A-918A-8F128C0DF906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{1450FE50-09F0-41E3-9A34-8E360C933507}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,14 @@ Global
 		{FA88FF03-4E60-45FD-AE39-8ED588DD7129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA88FF03-4E60-45FD-AE39-8ED588DD7129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA88FF03-4E60-45FD-AE39-8ED588DD7129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266D7A4A-DC76-407A-918A-8F128C0DF906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266D7A4A-DC76-407A-918A-8F128C0DF906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266D7A4A-DC76-407A-918A-8F128C0DF906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266D7A4A-DC76-407A-918A-8F128C0DF906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1450FE50-09F0-41E3-9A34-8E360C933507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1450FE50-09F0-41E3-9A34-8E360C933507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1450FE50-09F0-41E3-9A34-8E360C933507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1450FE50-09F0-41E3-9A34-8E360C933507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

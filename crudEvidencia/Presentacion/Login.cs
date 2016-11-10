@@ -9,13 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logica;
 
-
 namespace crudEvidencia
 {
     public partial class Login : Form
     {
-        
-
         public Login()
         {
             InitializeComponent();
@@ -29,7 +26,7 @@ namespace crudEvidencia
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ejercicioAlcaldiaDataSet.Rol' table. You can move, or remove it, as needed.
-            this.rolTableAdapter.Fill(this.ejercicioAlcaldiaDataSet.Rol);
+           
 
         }
 
@@ -38,18 +35,8 @@ namespace crudEvidencia
             ClsPersona objPersona = new ClsPersona();
             objPersona.DocumentoIdentidad1 = int.Parse(TBdocIdentidad.Text);
             objPersona.Clave = TBcontrasenia.Text;
-            objPersona.Rol = int.Parse(CBrol.SelectedValue.ToString());
-            
-            if (objPersona.Login() == 0)
-            {
-                Form2 form = new Form2();
-                form.Show();
-                MessageBox.Show("Usuario Logueado");
-            }
-            else
-            {
-                MessageBox.Show("Credenciales incorrectas");
-            }
+            objPersona.Rol = int.Parse(CBrol.Text);
+            objPersona.Login();
         }
     }
 }

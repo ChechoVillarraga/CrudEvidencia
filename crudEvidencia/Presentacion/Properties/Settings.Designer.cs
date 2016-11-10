@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CrudAlcaldia.Properties
+namespace Presentacion.Properties
 {
 
 
