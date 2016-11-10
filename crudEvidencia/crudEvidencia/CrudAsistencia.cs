@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace crudEvidencia
 {
-    public partial class Form1 : Form
+    public partial class CrudAsistencia : Form
     {
-        public Form1()
+        public CrudAsistencia()
         {
             InitializeComponent();
         }
