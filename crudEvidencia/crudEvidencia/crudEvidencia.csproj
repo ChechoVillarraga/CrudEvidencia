@@ -51,6 +51,12 @@
     <Compile Include="CrudAsistencia.Designer.cs">
       <DependentUpon>CrudAsistencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD\barrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\barrios.Designer.cs">
+      <DependentUpon>barrios.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD\CursoAsociado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,11 +69,35 @@
     <Compile Include="CRUD\EstadoSolicitud.Designer.cs">
       <DependentUpon>EstadoSolicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD\institutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\institutos.Designer.cs">
+      <DependentUpon>institutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\personasRegistradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\personasRegistradas.Designer.cs">
+      <DependentUpon>personasRegistradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\RegistroPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\RegistroPersona.Designer.cs">
+      <DependentUpon>RegistroPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD\Horario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CRUD\Horario.Designer.cs">
       <DependentUpon>Horario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\secretarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\secretarias.Designer.cs">
+      <DependentUpon>secretarias.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControl1.cs">
       <SubType>Component</SubType>
@@ -103,14 +133,29 @@
     <EmbeddedResource Include="CrudAsistencia.resx">
       <DependentUpon>CrudAsistencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\barrios.resx">
+      <DependentUpon>barrios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CursoAsociado.resx">
       <DependentUpon>CursoAsociado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\EstadoSolicitud.resx">
       <DependentUpon>EstadoSolicitud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\institutos.resx">
+      <DependentUpon>institutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\personasRegistradas.resx">
+      <DependentUpon>personasRegistradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\RegistroPersona.resx">
+      <DependentUpon>RegistroPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUD\Horario.resx">
       <DependentUpon>Horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\secretarias.resx">
+      <DependentUpon>secretarias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
