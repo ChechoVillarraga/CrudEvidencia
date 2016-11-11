@@ -128,6 +128,7 @@
             this.horarioToolStripMenuItem.Name = "horarioToolStripMenuItem";
             this.horarioToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.horarioToolStripMenuItem.Text = "Horario";
+            this.horarioToolStripMenuItem.Click += new System.EventHandler(this.horarioToolStripMenuItem_Click);
             // 
             // asignarHorarioToolStripMenuItem
             // 
@@ -180,21 +181,23 @@
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
+            this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::crudEvidencia.Properties.Resources._1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(628, 398);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuPrincipal";
             this.Text = "Evidencia Clase .net";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -45,6 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrudAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudAsistencia.Designer.cs">
+      <DependentUpon>CrudAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CursoAsociado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CursoAsociado.Designer.cs">
+      <DependentUpon>CursoAsociado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EstadoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EstadoSolicitud.Designer.cs">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\Horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\Horario.Designer.cs">
+      <DependentUpon>Horario.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -76,6 +100,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrudAsistencia.resx">
+      <DependentUpon>CrudAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CursoAsociado.resx">
+      <DependentUpon>CursoAsociado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EstadoSolicitud.resx">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\Horario.resx">
+      <DependentUpon>Horario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
