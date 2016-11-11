@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace crudEvidencia
 {
-    public partial class Form2 : Form
+    public partial class CustomControl1 : Control
     {
-        public Form2()
+        public CustomControl1()
         {
             InitializeComponent();
+        }
+
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
         }
     }
 }

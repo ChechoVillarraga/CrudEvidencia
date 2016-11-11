@@ -42,9 +42,10 @@ namespace crudEvidencia
             
             if (objPersona.Login() == 0)
             {
-                Form2 form = new Form2();
+                MenuPrincipal form = new MenuPrincipal();
                 form.Show();
-                MessageBox.Show("Usuario Logueado");
+                
+
             }
             else
             {
