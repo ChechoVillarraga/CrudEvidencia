@@ -26,14 +26,27 @@ namespace Datos
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message, "Atención");
             }
 
         }
 
         public void desconectar()
         {
-            conexion.Close();
+            try
+            {
+                if (conexion != null)
+                {
+                    conexion.Close();
+
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Atención");
+                throw;
+            }
+            
         }
 
         public bool ejecutar(string sentencia)

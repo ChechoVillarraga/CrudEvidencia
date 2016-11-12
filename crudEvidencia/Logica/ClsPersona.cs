@@ -156,7 +156,12 @@ namespace Logica
         {
             ClsConexion objConexion = new ClsConexion();
             DataSet ds = new DataSet();
-            string sentencia = "SELECT rp.idRol FROM Personas p JOIN RolPersonas rp ON p.idPersona = rp.idPersona WHERE p.documentoIdentidad = '" + DocumentoIdentidad + "' AND p.clave = '" + clave + "' AND rp.idRol = '" + rol + "'";
+            string sentencia = 
+                "SELECT rp.idRol "+
+                "FROM Personas p " +
+                "JOIN RolPersonas rp "+
+                "ON p.idPersona = rp.idPersona "+
+                "WHERE p.documentoIdentidad = '" + DocumentoIdentidad + "' AND p.clave = '" + clave + "' AND rp.idRol = '" + rol + "'";
             ds =  objConexion.consultar(sentencia);
             if (ds.Tables[0].Rows.Count == 0)
             {
@@ -168,6 +173,18 @@ namespace Logica
             }
             return rol;
 
+        }
+
+        public bool registrar()
+        {
+            bool rta=true;
+            string consulta = "INSERT INTO Personas (" +
+                ") " + 
+                "VALUES "
+
+
+
+            return rta;
         }
         
 
