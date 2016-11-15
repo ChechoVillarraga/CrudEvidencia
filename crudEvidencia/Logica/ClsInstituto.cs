@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Logica
 {
-    public    class ClsInstituto
+    public class ClsInstituto
     {
         int idInstituto;
 

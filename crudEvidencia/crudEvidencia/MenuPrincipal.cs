@@ -34,5 +34,11 @@ namespace crudEvidencia
             CRUD.EstadoSolicitud estadoOBJ = new CRUD.EstadoSolicitud();
             estadoOBJ.Show();
         }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CRUD.Persona personaOBJ = new CRUD.Persona();
+            personaOBJ.Show();
+        }
     }
 }

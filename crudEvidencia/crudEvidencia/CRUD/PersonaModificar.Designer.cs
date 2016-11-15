@@ -1,6 +1,6 @@
 ﻿namespace crudEvidencia.CRUD
 {
-    partial class ejemplo
+    partial class PersonaModificar
     {
         /// <summary>
         /// Required designer variable.
@@ -65,14 +65,17 @@
             this.nombresTextBox = new System.Windows.Forms.TextBox();
             this.apellidosTextBox = new System.Windows.Forms.TextBox();
             this.direccionTextBox = new System.Windows.Forms.TextBox();
-            this.barrioTextBox = new System.Windows.Forms.TextBox();
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
             this.correoElectronicoTextBox = new System.Windows.Forms.TextBox();
             this.claveTextBox = new System.Windows.Forms.TextBox();
             this.claveAntiguaTextBox = new System.Windows.Forms.TextBox();
-            this.idSecretariaTextBox = new System.Windows.Forms.TextBox();
-            this.estadoTextBox = new System.Windows.Forms.TextBox();
-            this.habeasDataTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GuardarBtn = new System.Windows.Forms.Button();
+            this.VolverBtn = new System.Windows.Forms.Button();
+            this.habeasDataTextBox = new System.Windows.Forms.ComboBox();
+            this.estadoTextBox = new System.Windows.Forms.ComboBox();
+            this.barrioTextBox = new System.Windows.Forms.ComboBox();
+            this.idSecretariaTextBox = new System.Windows.Forms.ComboBox();
             idPersonaLabel = new System.Windows.Forms.Label();
             documentoIdentidadLabel = new System.Windows.Forms.Label();
             nombresLabel = new System.Windows.Forms.Label();
@@ -89,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personasDataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ejercicioAlcaldiaDataSet
@@ -125,6 +129,8 @@
             // 
             // personasDataGridView
             // 
+            this.personasDataGridView.AllowUserToAddRows = false;
+            this.personasDataGridView.AllowUserToDeleteRows = false;
             this.personasDataGridView.AutoGenerateColumns = false;
             this.personasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.personasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -142,9 +148,10 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.personasDataGridView.DataSource = this.personasBindingSource;
-            this.personasDataGridView.Location = new System.Drawing.Point(243, 16);
+            this.personasDataGridView.Location = new System.Drawing.Point(12, 141);
             this.personasDataGridView.Name = "personasDataGridView";
-            this.personasDataGridView.Size = new System.Drawing.Size(422, 332);
+            this.personasDataGridView.ReadOnly = true;
+            this.personasDataGridView.Size = new System.Drawing.Size(948, 318);
             this.personasDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -152,340 +159,395 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "idPersona";
             this.dataGridViewTextBoxColumn1.HeaderText = "idPersona";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "documentoIdentidad";
             this.dataGridViewTextBoxColumn2.HeaderText = "documentoIdentidad";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "nombres";
             this.dataGridViewTextBoxColumn3.HeaderText = "nombres";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "apellidos";
             this.dataGridViewTextBoxColumn4.HeaderText = "apellidos";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "direccion";
             this.dataGridViewTextBoxColumn5.HeaderText = "direccion";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Barrio";
             this.dataGridViewTextBoxColumn6.HeaderText = "Barrio";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "telefono";
             this.dataGridViewTextBoxColumn7.HeaderText = "telefono";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "correoElectronico";
             this.dataGridViewTextBoxColumn8.HeaderText = "correoElectronico";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "clave";
             this.dataGridViewTextBoxColumn9.HeaderText = "clave";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "claveAntigua";
             this.dataGridViewTextBoxColumn10.HeaderText = "claveAntigua";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "idSecretaria";
             this.dataGridViewTextBoxColumn11.HeaderText = "idSecretaria";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.DataPropertyName = "estado";
             this.dataGridViewTextBoxColumn12.HeaderText = "estado";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.DataPropertyName = "HabeasData";
             this.dataGridViewTextBoxColumn13.HeaderText = "HabeasData";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
             // idPersonaLabel
             // 
             idPersonaLabel.AutoSize = true;
-            idPersonaLabel.Location = new System.Drawing.Point(21, 19);
+            idPersonaLabel.Location = new System.Drawing.Point(6, 16);
             idPersonaLabel.Name = "idPersonaLabel";
             idPersonaLabel.Size = new System.Drawing.Size(60, 13);
-            idPersonaLabel.TabIndex = 1;
+            idPersonaLabel.TabIndex = 2;
             idPersonaLabel.Text = "id Persona:";
             // 
             // idPersonaTextBox
             // 
+            this.idPersonaTextBox.BackColor = System.Drawing.Color.White;
             this.idPersonaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "idPersona", true));
-            this.idPersonaTextBox.Location = new System.Drawing.Point(137, 16);
+            this.idPersonaTextBox.Enabled = false;
+            this.idPersonaTextBox.Location = new System.Drawing.Point(122, 13);
             this.idPersonaTextBox.Name = "idPersonaTextBox";
             this.idPersonaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idPersonaTextBox.TabIndex = 2;
+            this.idPersonaTextBox.TabIndex = 3;
             // 
             // documentoIdentidadLabel
             // 
             documentoIdentidadLabel.AutoSize = true;
-            documentoIdentidadLabel.Location = new System.Drawing.Point(21, 45);
+            documentoIdentidadLabel.Location = new System.Drawing.Point(6, 42);
             documentoIdentidadLabel.Name = "documentoIdentidadLabel";
             documentoIdentidadLabel.Size = new System.Drawing.Size(110, 13);
-            documentoIdentidadLabel.TabIndex = 3;
+            documentoIdentidadLabel.TabIndex = 4;
             documentoIdentidadLabel.Text = "documento Identidad:";
             // 
             // documentoIdentidadTextBox
             // 
             this.documentoIdentidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "documentoIdentidad", true));
-            this.documentoIdentidadTextBox.Location = new System.Drawing.Point(137, 42);
+            this.documentoIdentidadTextBox.Location = new System.Drawing.Point(122, 39);
             this.documentoIdentidadTextBox.Name = "documentoIdentidadTextBox";
             this.documentoIdentidadTextBox.Size = new System.Drawing.Size(100, 20);
-            this.documentoIdentidadTextBox.TabIndex = 4;
+            this.documentoIdentidadTextBox.TabIndex = 5;
             // 
             // nombresLabel
             // 
             nombresLabel.AutoSize = true;
-            nombresLabel.Location = new System.Drawing.Point(21, 71);
+            nombresLabel.Location = new System.Drawing.Point(6, 68);
             nombresLabel.Name = "nombresLabel";
             nombresLabel.Size = new System.Drawing.Size(50, 13);
-            nombresLabel.TabIndex = 5;
+            nombresLabel.TabIndex = 6;
             nombresLabel.Text = "nombres:";
             // 
             // nombresTextBox
             // 
             this.nombresTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "nombres", true));
-            this.nombresTextBox.Location = new System.Drawing.Point(137, 68);
+            this.nombresTextBox.Location = new System.Drawing.Point(122, 65);
             this.nombresTextBox.Name = "nombresTextBox";
             this.nombresTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nombresTextBox.TabIndex = 6;
+            this.nombresTextBox.TabIndex = 7;
             // 
             // apellidosLabel
             // 
             apellidosLabel.AutoSize = true;
-            apellidosLabel.Location = new System.Drawing.Point(21, 97);
+            apellidosLabel.Location = new System.Drawing.Point(244, 16);
             apellidosLabel.Name = "apellidosLabel";
             apellidosLabel.Size = new System.Drawing.Size(51, 13);
-            apellidosLabel.TabIndex = 7;
+            apellidosLabel.TabIndex = 8;
             apellidosLabel.Text = "apellidos:";
             // 
             // apellidosTextBox
             // 
             this.apellidosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "apellidos", true));
-            this.apellidosTextBox.Location = new System.Drawing.Point(137, 94);
+            this.apellidosTextBox.Location = new System.Drawing.Point(360, 13);
             this.apellidosTextBox.Name = "apellidosTextBox";
             this.apellidosTextBox.Size = new System.Drawing.Size(100, 20);
-            this.apellidosTextBox.TabIndex = 8;
+            this.apellidosTextBox.TabIndex = 9;
             // 
             // direccionLabel
             // 
             direccionLabel.AutoSize = true;
-            direccionLabel.Location = new System.Drawing.Point(21, 123);
+            direccionLabel.Location = new System.Drawing.Point(244, 42);
             direccionLabel.Name = "direccionLabel";
             direccionLabel.Size = new System.Drawing.Size(53, 13);
-            direccionLabel.TabIndex = 9;
+            direccionLabel.TabIndex = 10;
             direccionLabel.Text = "direccion:";
             // 
             // direccionTextBox
             // 
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(137, 120);
+            this.direccionTextBox.Location = new System.Drawing.Point(360, 39);
             this.direccionTextBox.Name = "direccionTextBox";
             this.direccionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.direccionTextBox.TabIndex = 10;
+            this.direccionTextBox.TabIndex = 11;
             // 
             // barrioLabel
             // 
             barrioLabel.AutoSize = true;
-            barrioLabel.Location = new System.Drawing.Point(21, 149);
+            barrioLabel.Location = new System.Drawing.Point(244, 68);
             barrioLabel.Name = "barrioLabel";
             barrioLabel.Size = new System.Drawing.Size(37, 13);
-            barrioLabel.TabIndex = 11;
+            barrioLabel.TabIndex = 12;
             barrioLabel.Text = "Barrio:";
-            // 
-            // barrioTextBox
-            // 
-            this.barrioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "Barrio", true));
-            this.barrioTextBox.Location = new System.Drawing.Point(137, 146);
-            this.barrioTextBox.Name = "barrioTextBox";
-            this.barrioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.barrioTextBox.TabIndex = 12;
             // 
             // telefonoLabel
             // 
             telefonoLabel.AutoSize = true;
-            telefonoLabel.Location = new System.Drawing.Point(21, 175);
+            telefonoLabel.Location = new System.Drawing.Point(484, 16);
             telefonoLabel.Name = "telefonoLabel";
             telefonoLabel.Size = new System.Drawing.Size(48, 13);
-            telefonoLabel.TabIndex = 13;
+            telefonoLabel.TabIndex = 14;
             telefonoLabel.Text = "telefono:";
             // 
             // telefonoTextBox
             // 
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "telefono", true));
-            this.telefonoTextBox.Location = new System.Drawing.Point(137, 172);
+            this.telefonoTextBox.Location = new System.Drawing.Point(600, 13);
             this.telefonoTextBox.Name = "telefonoTextBox";
             this.telefonoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefonoTextBox.TabIndex = 14;
+            this.telefonoTextBox.TabIndex = 15;
             // 
             // correoElectronicoLabel
             // 
             correoElectronicoLabel.AutoSize = true;
-            correoElectronicoLabel.Location = new System.Drawing.Point(21, 201);
+            correoElectronicoLabel.Location = new System.Drawing.Point(484, 42);
             correoElectronicoLabel.Name = "correoElectronicoLabel";
             correoElectronicoLabel.Size = new System.Drawing.Size(96, 13);
-            correoElectronicoLabel.TabIndex = 15;
+            correoElectronicoLabel.TabIndex = 16;
             correoElectronicoLabel.Text = "correo Electronico:";
             // 
             // correoElectronicoTextBox
             // 
             this.correoElectronicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "correoElectronico", true));
-            this.correoElectronicoTextBox.Location = new System.Drawing.Point(137, 198);
+            this.correoElectronicoTextBox.Location = new System.Drawing.Point(600, 39);
             this.correoElectronicoTextBox.Name = "correoElectronicoTextBox";
             this.correoElectronicoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.correoElectronicoTextBox.TabIndex = 16;
+            this.correoElectronicoTextBox.TabIndex = 17;
             // 
             // claveLabel
             // 
             claveLabel.AutoSize = true;
-            claveLabel.Location = new System.Drawing.Point(21, 227);
+            claveLabel.Location = new System.Drawing.Point(484, 68);
             claveLabel.Name = "claveLabel";
             claveLabel.Size = new System.Drawing.Size(36, 13);
-            claveLabel.TabIndex = 17;
+            claveLabel.TabIndex = 18;
             claveLabel.Text = "clave:";
             // 
             // claveTextBox
             // 
             this.claveTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "clave", true));
-            this.claveTextBox.Location = new System.Drawing.Point(137, 224);
+            this.claveTextBox.Location = new System.Drawing.Point(600, 65);
             this.claveTextBox.Name = "claveTextBox";
             this.claveTextBox.Size = new System.Drawing.Size(100, 20);
-            this.claveTextBox.TabIndex = 18;
+            this.claveTextBox.TabIndex = 19;
             // 
             // claveAntiguaLabel
             // 
             claveAntiguaLabel.AutoSize = true;
-            claveAntiguaLabel.Location = new System.Drawing.Point(21, 253);
+            claveAntiguaLabel.Location = new System.Drawing.Point(726, 16);
             claveAntiguaLabel.Name = "claveAntiguaLabel";
             claveAntiguaLabel.Size = new System.Drawing.Size(75, 13);
-            claveAntiguaLabel.TabIndex = 19;
+            claveAntiguaLabel.TabIndex = 20;
             claveAntiguaLabel.Text = "clave Antigua:";
             // 
             // claveAntiguaTextBox
             // 
             this.claveAntiguaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "claveAntigua", true));
-            this.claveAntiguaTextBox.Location = new System.Drawing.Point(137, 250);
+            this.claveAntiguaTextBox.Location = new System.Drawing.Point(842, 13);
             this.claveAntiguaTextBox.Name = "claveAntiguaTextBox";
             this.claveAntiguaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.claveAntiguaTextBox.TabIndex = 20;
+            this.claveAntiguaTextBox.TabIndex = 21;
             // 
             // idSecretariaLabel
             // 
             idSecretariaLabel.AutoSize = true;
-            idSecretariaLabel.Location = new System.Drawing.Point(21, 279);
+            idSecretariaLabel.Location = new System.Drawing.Point(726, 42);
             idSecretariaLabel.Name = "idSecretariaLabel";
             idSecretariaLabel.Size = new System.Drawing.Size(69, 13);
-            idSecretariaLabel.TabIndex = 21;
+            idSecretariaLabel.TabIndex = 22;
             idSecretariaLabel.Text = "id Secretaria:";
-            // 
-            // idSecretariaTextBox
-            // 
-            this.idSecretariaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "idSecretaria", true));
-            this.idSecretariaTextBox.Location = new System.Drawing.Point(137, 276);
-            this.idSecretariaTextBox.Name = "idSecretariaTextBox";
-            this.idSecretariaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idSecretariaTextBox.TabIndex = 22;
             // 
             // estadoLabel
             // 
             estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(21, 305);
+            estadoLabel.Location = new System.Drawing.Point(726, 68);
             estadoLabel.Name = "estadoLabel";
             estadoLabel.Size = new System.Drawing.Size(42, 13);
-            estadoLabel.TabIndex = 23;
+            estadoLabel.TabIndex = 24;
             estadoLabel.Text = "estado:";
-            // 
-            // estadoTextBox
-            // 
-            this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "estado", true));
-            this.estadoTextBox.Location = new System.Drawing.Point(137, 302);
-            this.estadoTextBox.Name = "estadoTextBox";
-            this.estadoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.estadoTextBox.TabIndex = 24;
             // 
             // habeasDataLabel
             // 
             habeasDataLabel.AutoSize = true;
-            habeasDataLabel.Location = new System.Drawing.Point(21, 331);
+            habeasDataLabel.Location = new System.Drawing.Point(726, 94);
             habeasDataLabel.Name = "habeasDataLabel";
             habeasDataLabel.Size = new System.Drawing.Size(73, 13);
-            habeasDataLabel.TabIndex = 25;
+            habeasDataLabel.TabIndex = 26;
             habeasDataLabel.Text = "Habeas Data:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.habeasDataTextBox);
+            this.groupBox1.Controls.Add(this.VolverBtn);
+            this.groupBox1.Controls.Add(this.GuardarBtn);
+            this.groupBox1.Controls.Add(this.estadoTextBox);
+            this.groupBox1.Controls.Add(idPersonaLabel);
+            this.groupBox1.Controls.Add(claveAntiguaLabel);
+            this.groupBox1.Controls.Add(this.idSecretariaTextBox);
+            this.groupBox1.Controls.Add(this.barrioTextBox);
+            this.groupBox1.Controls.Add(telefonoLabel);
+            this.groupBox1.Controls.Add(this.claveAntiguaTextBox);
+            this.groupBox1.Controls.Add(idSecretariaLabel);
+            this.groupBox1.Controls.Add(this.telefonoTextBox);
+            this.groupBox1.Controls.Add(estadoLabel);
+            this.groupBox1.Controls.Add(correoElectronicoLabel);
+            this.groupBox1.Controls.Add(this.idPersonaTextBox);
+            this.groupBox1.Controls.Add(habeasDataLabel);
+            this.groupBox1.Controls.Add(this.correoElectronicoTextBox);
+            this.groupBox1.Controls.Add(barrioLabel);
+            this.groupBox1.Controls.Add(claveLabel);
+            this.groupBox1.Controls.Add(documentoIdentidadLabel);
+            this.groupBox1.Controls.Add(this.claveTextBox);
+            this.groupBox1.Controls.Add(this.direccionTextBox);
+            this.groupBox1.Controls.Add(this.documentoIdentidadTextBox);
+            this.groupBox1.Controls.Add(direccionLabel);
+            this.groupBox1.Controls.Add(nombresLabel);
+            this.groupBox1.Controls.Add(this.apellidosTextBox);
+            this.groupBox1.Controls.Add(this.nombresTextBox);
+            this.groupBox1.Controls.Add(apellidosLabel);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(948, 123);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            // 
+            // GuardarBtn
+            // 
+            this.GuardarBtn.Location = new System.Drawing.Point(9, 94);
+            this.GuardarBtn.Name = "GuardarBtn";
+            this.GuardarBtn.Size = new System.Drawing.Size(75, 23);
+            this.GuardarBtn.TabIndex = 28;
+            this.GuardarBtn.Text = "Guardar";
+            this.GuardarBtn.UseVisualStyleBackColor = true;
+            this.GuardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
+            // 
+            // VolverBtn
+            // 
+            this.VolverBtn.Location = new System.Drawing.Point(90, 94);
+            this.VolverBtn.Name = "VolverBtn";
+            this.VolverBtn.Size = new System.Drawing.Size(75, 23);
+            this.VolverBtn.TabIndex = 29;
+            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.UseVisualStyleBackColor = true;
+            this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
             // habeasDataTextBox
             // 
-            this.habeasDataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "HabeasData", true));
-            this.habeasDataTextBox.Location = new System.Drawing.Point(137, 328);
+            this.habeasDataTextBox.FormattingEnabled = true;
+            this.habeasDataTextBox.Location = new System.Drawing.Point(842, 91);
             this.habeasDataTextBox.Name = "habeasDataTextBox";
-            this.habeasDataTextBox.Size = new System.Drawing.Size(100, 20);
-            this.habeasDataTextBox.TabIndex = 26;
+            this.habeasDataTextBox.Size = new System.Drawing.Size(100, 21);
+            this.habeasDataTextBox.TabIndex = 33;
             // 
-            // ejemplo
+            // estadoTextBox
+            // 
+            this.estadoTextBox.FormattingEnabled = true;
+            this.estadoTextBox.Location = new System.Drawing.Point(842, 65);
+            this.estadoTextBox.Name = "estadoTextBox";
+            this.estadoTextBox.Size = new System.Drawing.Size(100, 21);
+            this.estadoTextBox.TabIndex = 32;
+            // 
+            // barrioTextBox
+            // 
+            this.barrioTextBox.DisplayMember = "Barrio";
+            this.barrioTextBox.FormattingEnabled = true;
+            this.barrioTextBox.Location = new System.Drawing.Point(360, 68);
+            this.barrioTextBox.Name = "barrioTextBox";
+            this.barrioTextBox.Size = new System.Drawing.Size(100, 21);
+            this.barrioTextBox.TabIndex = 30;
+            this.barrioTextBox.ValueMember = "idBarrios";
+            // 
+            // idSecretariaTextBox
+            // 
+            this.idSecretariaTextBox.DisplayMember = "nombreSec";
+            this.idSecretariaTextBox.FormattingEnabled = true;
+            this.idSecretariaTextBox.Location = new System.Drawing.Point(842, 39);
+            this.idSecretariaTextBox.Name = "idSecretariaTextBox";
+            this.idSecretariaTextBox.Size = new System.Drawing.Size(100, 21);
+            this.idSecretariaTextBox.TabIndex = 31;
+            this.idSecretariaTextBox.ValueMember = "idSecretaria";
+            // 
+            // PersonaModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 453);
-            this.Controls.Add(idPersonaLabel);
-            this.Controls.Add(this.idPersonaTextBox);
-            this.Controls.Add(documentoIdentidadLabel);
-            this.Controls.Add(this.documentoIdentidadTextBox);
-            this.Controls.Add(nombresLabel);
-            this.Controls.Add(this.nombresTextBox);
-            this.Controls.Add(apellidosLabel);
-            this.Controls.Add(this.apellidosTextBox);
-            this.Controls.Add(direccionLabel);
-            this.Controls.Add(this.direccionTextBox);
-            this.Controls.Add(barrioLabel);
-            this.Controls.Add(this.barrioTextBox);
-            this.Controls.Add(telefonoLabel);
-            this.Controls.Add(this.telefonoTextBox);
-            this.Controls.Add(correoElectronicoLabel);
-            this.Controls.Add(this.correoElectronicoTextBox);
-            this.Controls.Add(claveLabel);
-            this.Controls.Add(this.claveTextBox);
-            this.Controls.Add(claveAntiguaLabel);
-            this.Controls.Add(this.claveAntiguaTextBox);
-            this.Controls.Add(idSecretariaLabel);
-            this.Controls.Add(this.idSecretariaTextBox);
-            this.Controls.Add(estadoLabel);
-            this.Controls.Add(this.estadoTextBox);
-            this.Controls.Add(habeasDataLabel);
-            this.Controls.Add(this.habeasDataTextBox);
+            this.ClientSize = new System.Drawing.Size(972, 471);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.personasDataGridView);
-            this.Name = "ejemplo";
-            this.Text = "ejemplo";
-            this.Load += new System.EventHandler(this.ejemplo_Load);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(988, 510);
+            this.MinimumSize = new System.Drawing.Size(988, 510);
+            this.Name = "PersonaModificar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar una Persona";
+            this.Load += new System.EventHandler(this.PersonaModificar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personasDataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -514,13 +576,16 @@
         private System.Windows.Forms.TextBox nombresTextBox;
         private System.Windows.Forms.TextBox apellidosTextBox;
         private System.Windows.Forms.TextBox direccionTextBox;
-        private System.Windows.Forms.TextBox barrioTextBox;
         private System.Windows.Forms.TextBox telefonoTextBox;
         private System.Windows.Forms.TextBox correoElectronicoTextBox;
         private System.Windows.Forms.TextBox claveTextBox;
         private System.Windows.Forms.TextBox claveAntiguaTextBox;
-        private System.Windows.Forms.TextBox idSecretariaTextBox;
-        private System.Windows.Forms.TextBox estadoTextBox;
-        private System.Windows.Forms.TextBox habeasDataTextBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button VolverBtn;
+        private System.Windows.Forms.Button GuardarBtn;
+        private System.Windows.Forms.ComboBox habeasDataTextBox;
+        private System.Windows.Forms.ComboBox estadoTextBox;
+        private System.Windows.Forms.ComboBox barrioTextBox;
+        private System.Windows.Forms.ComboBox idSecretariaTextBox;
     }
 }

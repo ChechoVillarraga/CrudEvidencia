@@ -44,6 +44,7 @@ namespace crudEvidencia
             {
                 MenuPrincipal form = new MenuPrincipal();
                 form.Show();
+                this.Hide();
                 
 
             }
