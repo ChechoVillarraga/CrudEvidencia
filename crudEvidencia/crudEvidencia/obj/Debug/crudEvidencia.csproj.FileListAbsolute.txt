@@ -52,6 +52,7 @@ C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crud
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Login.resources
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Properties.Resources.resources
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CrudAsistencia.resources
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.barrios.resources
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.CursoAsociado.resources
@@ -63,3 +64,14 @@ C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\c
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.secretarias.resources
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.MenuPrincipal.resources
 C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.FrmLugares.resources
+=======
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CrudAsistencia.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.barrios.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.CursoAsociado.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.EstadoSolicitud.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.institutos.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.Persona.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.Horario.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.secretarias.resources
+C:\Users\Sergio\Source\Repos\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.MenuPrincipal.resources
+>>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b

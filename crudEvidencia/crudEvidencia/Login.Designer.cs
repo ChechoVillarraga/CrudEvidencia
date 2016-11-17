@@ -53,14 +53,14 @@
             this.TBcontrasenia.Location = new System.Drawing.Point(299, 189);
             this.TBcontrasenia.Name = "TBcontrasenia";
             this.TBcontrasenia.Size = new System.Drawing.Size(204, 20);
-            this.TBcontrasenia.TabIndex = 0;
+            this.TBcontrasenia.TabIndex = 1;
             // 
             // TBdocIdentidad
             // 
             this.TBdocIdentidad.Location = new System.Drawing.Point(299, 141);
             this.TBdocIdentidad.Name = "TBdocIdentidad";
             this.TBdocIdentidad.Size = new System.Drawing.Size(204, 20);
-            this.TBdocIdentidad.TabIndex = 1;
+            this.TBdocIdentidad.TabIndex = 0;
             // 
             // BtnSalir
             // 
@@ -79,7 +79,7 @@
             this.BtnIngresar.Location = new System.Drawing.Point(295, 264);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(208, 41);
-            this.BtnIngresar.TabIndex = 3;
+            this.BtnIngresar.TabIndex = 4;
             this.BtnIngresar.Text = "Ingresar";
             this.BtnIngresar.UseVisualStyleBackColor = false;
             this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
@@ -130,7 +130,7 @@
             this.CBrol.Location = new System.Drawing.Point(299, 237);
             this.CBrol.Name = "CBrol";
             this.CBrol.Size = new System.Drawing.Size(204, 21);
-            this.CBrol.TabIndex = 8;
+            this.CBrol.TabIndex = 2;
             this.CBrol.ValueMember = "idRol";
             // 
             // rolBindingSource

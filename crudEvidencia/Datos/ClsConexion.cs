@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+namespace Datos
+{
+    public class ClsConexion
+    {
+        SqlConnection conexion;
+        SqlCommand comando;
+        SqlDataAdapter adaptador;
+        DataSet ds;
+
+
+        public void conectar()
+        {
+            try
+            {
+<<<<<<< HEAD:crudEvidencia/Datos/ClsConeccion.cs
+                conexion = new SqlConnection("Data Source=GILDARDOAGUIRRE\\SQLEXPRESS;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
+=======
+                conexion = new SqlConnection("Data Source=DESKTOP-QU7FNVF\\SQLEXPRESS;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
+>>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b:crudEvidencia/Datos/ClsConexion.cs
+                conexion.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Atención");
+            }
+
+        }
+
+        public void desconectar()
+        {
+            try
+            {
+                if (conexion != null)
+                {
+                    conexion.Close();
+
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Atención");
+                throw;
+            }
+            
+        }
+
+        public bool ejecutar(string sentencia)
+        {
+            bool verificar;
+            conectar();
+            comando = new SqlCommand();
+            try
+            {
+                comando.CommandText = sentencia;
+                comando.Connection = conexion;
+                comando.ExecuteNonQuery();
+                verificar = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                verificar = false;
+            }
+            desconectar();
+            return verificar;
+        }
+
+        public DataSet consultar(string sentencia)
+        {
+            conectar();
+            ds = new DataSet();
+            try
+            {
+                adaptador = new SqlDataAdapter(sentencia, conexion);
+                adaptador.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+
+            desconectar();
+            return ds;
+        }
+    }
+}

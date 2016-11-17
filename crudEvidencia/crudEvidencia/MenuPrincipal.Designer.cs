@@ -77,25 +77,26 @@
             // personasToolStripMenuItem
             // 
             this.personasToolStripMenuItem.Name = "personasToolStripMenuItem";
-            this.personasToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.personasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.personasToolStripMenuItem.Text = "Personas";
+            this.personasToolStripMenuItem.Click += new System.EventHandler(this.personasToolStripMenuItem_Click);
             // 
             // rolesToolStripMenuItem
             // 
             this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
-            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rolesToolStripMenuItem.Text = "Roles";
             // 
             // asignarRolToolStripMenuItem
             // 
             this.asignarRolToolStripMenuItem.Name = "asignarRolToolStripMenuItem";
-            this.asignarRolToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.asignarRolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.asignarRolToolStripMenuItem.Text = "Asignar Rol";
             // 
             // crearBarrioToolStripMenuItem
             // 
             this.crearBarrioToolStripMenuItem.Name = "crearBarrioToolStripMenuItem";
-            this.crearBarrioToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.crearBarrioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.crearBarrioToolStripMenuItem.Text = "Crear Barrio";
             // 
             // cursosToolStripMenuItem
@@ -181,7 +182,7 @@
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 

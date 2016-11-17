@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,18 +50,53 @@
     <Compile Include="ClsHorarioIntermedio.cs" />
     <Compile Include="ClsInscritos.cs" />
     <Compile Include="ClsInstituto.cs" />
+<<<<<<< HEAD
     <Compile Include="ClsLugar.cs" />
+=======
+>>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b
     <Compile Include="ClsPersona.cs" />
     <Compile Include="ClsRol.cs" />
     <Compile Include="ClsRolPersona.cs" />
     <Compile Include="ClsSecretaria.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="EjercicioAlcaldiaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EjercicioAlcaldiaDataSet.xsd</DependentUpon>
+    </Compile>
+>>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
       <Project>{266d7a4a-dc76-407a-918a-8f128c0df906}</Project>
       <Name>Datos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EjercicioAlcaldiaDataSet.xsc">
+      <DependentUpon>EjercicioAlcaldiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EjercicioAlcaldiaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EjercicioAlcaldiaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EjercicioAlcaldiaDataSet.xss">
+      <DependentUpon>EjercicioAlcaldiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
