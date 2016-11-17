@@ -29,31 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idHorarioLabel;
-            System.Windows.Forms.Label horaLabel;
-            System.Windows.Forms.Label diaLabel;
             this.ejercicioAlcaldiaDataSet = new crudEvidencia.EjercicioAlcaldiaDataSet();
             this.horarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.horarioTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.HorarioTableAdapter();
             this.tableAdapterManager = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.TableAdapterManager();
-            this.horarioDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idHorarioTextBox = new System.Windows.Forms.TextBox();
-            this.horaTextBox = new System.Windows.Forms.TextBox();
-            this.diaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            idHorarioLabel = new System.Windows.Forms.Label();
-            horaLabel = new System.Windows.Forms.Label();
-            diaLabel = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnCrear = new System.Windows.Forms.Button();
+            this.gpInformacion = new System.Windows.Forms.GroupBox();
+            this.txtDia = new System.Windows.Forms.Label();
+            this.lblValorId = new System.Windows.Forms.Label();
+            this.lblid = new System.Windows.Forms.Label();
+            this.dgvResumen = new System.Windows.Forms.DataGridView();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.cmbHora = new System.Windows.Forms.ComboBox();
+            this.DtpDia = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.horarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horarioDataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gpInformacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResumen)).BeginInit();
             this.SuspendLayout();
             // 
             // ejercicioAlcaldiaDataSet
@@ -88,151 +83,142 @@
             this.tableAdapterManager.SecretariasTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // horarioDataGridView
+            // btnLimpiar
             // 
-            this.horarioDataGridView.AutoGenerateColumns = false;
-            this.horarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.horarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.horarioDataGridView.DataSource = this.horarioBindingSource;
-            this.horarioDataGridView.Location = new System.Drawing.Point(344, 12);
-            this.horarioDataGridView.Name = "horarioDataGridView";
-            this.horarioDataGridView.Size = new System.Drawing.Size(625, 425);
-            this.horarioDataGridView.TabIndex = 1;
+            this.btnLimpiar.Location = new System.Drawing.Point(224, 317);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(172, 41);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // btnEliminar
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "idHorario";
-            this.dataGridViewTextBoxColumn1.HeaderText = "idHorario";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.btnEliminar.Enabled = false;
+            this.btnEliminar.Location = new System.Drawing.Point(224, 364);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(172, 41);
+            this.btnEliminar.TabIndex = 10;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // dataGridViewTextBoxColumn2
+            // btnActualizar
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "hora";
-            this.dataGridViewTextBoxColumn2.HeaderText = "hora";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.btnActualizar.Enabled = false;
+            this.btnActualizar.Location = new System.Drawing.Point(21, 364);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(178, 41);
+            this.btnActualizar.TabIndex = 9;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // dataGridViewTextBoxColumn3
+            // btnCrear
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "dia";
-            this.dataGridViewTextBoxColumn3.HeaderText = "dia";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.btnCrear.Location = new System.Drawing.Point(21, 317);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(178, 41);
+            this.btnCrear.TabIndex = 8;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // idHorarioLabel
+            // gpInformacion
             // 
-            idHorarioLabel.AutoSize = true;
-            idHorarioLabel.Location = new System.Drawing.Point(25, 108);
-            idHorarioLabel.Name = "idHorarioLabel";
-            idHorarioLabel.Size = new System.Drawing.Size(55, 13);
-            idHorarioLabel.TabIndex = 1;
-            idHorarioLabel.Text = "id Horario:";
+            this.gpInformacion.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.gpInformacion.Controls.Add(this.DtpDia);
+            this.gpInformacion.Controls.Add(this.cmbHora);
+            this.gpInformacion.Controls.Add(this.txtDia);
+            this.gpInformacion.Controls.Add(this.lblNombre);
+            this.gpInformacion.Controls.Add(this.lblValorId);
+            this.gpInformacion.Controls.Add(this.lblid);
+            this.gpInformacion.Location = new System.Drawing.Point(21, 11);
+            this.gpInformacion.Name = "gpInformacion";
+            this.gpInformacion.Size = new System.Drawing.Size(375, 179);
+            this.gpInformacion.TabIndex = 7;
+            this.gpInformacion.TabStop = false;
+            this.gpInformacion.Text = "Información";
             // 
-            // idHorarioTextBox
+            // txtDia
             // 
-            this.idHorarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horarioBindingSource, "idHorario", true));
-            this.idHorarioTextBox.Location = new System.Drawing.Point(86, 105);
-            this.idHorarioTextBox.Name = "idHorarioTextBox";
-            this.idHorarioTextBox.Size = new System.Drawing.Size(200, 20);
-            this.idHorarioTextBox.TabIndex = 2;
+            this.txtDia.AutoSize = true;
+            this.txtDia.Location = new System.Drawing.Point(33, 129);
+            this.txtDia.Name = "txtDia";
+            this.txtDia.Size = new System.Drawing.Size(23, 13);
+            this.txtDia.TabIndex = 4;
+            this.txtDia.Text = "Dia";
             // 
-            // horaLabel
+            // lblValorId
             // 
-            horaLabel.AutoSize = true;
-            horaLabel.Location = new System.Drawing.Point(25, 134);
-            horaLabel.Name = "horaLabel";
-            horaLabel.Size = new System.Drawing.Size(31, 13);
-            horaLabel.TabIndex = 3;
-            horaLabel.Text = "hora:";
+            this.lblValorId.AutoSize = true;
+            this.lblValorId.Location = new System.Drawing.Point(110, 50);
+            this.lblValorId.Name = "lblValorId";
+            this.lblValorId.Size = new System.Drawing.Size(16, 13);
+            this.lblValorId.TabIndex = 1;
+            this.lblValorId.Text = "---";
             // 
-            // horaTextBox
+            // lblid
             // 
-            this.horaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.horarioBindingSource, "hora", true));
-            this.horaTextBox.Location = new System.Drawing.Point(86, 131);
-            this.horaTextBox.Name = "horaTextBox";
-            this.horaTextBox.Size = new System.Drawing.Size(200, 20);
-            this.horaTextBox.TabIndex = 4;
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(33, 50);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(53, 13);
+            this.lblid.TabIndex = 0;
+            this.lblid.Text = "Id Horario";
             // 
-            // diaLabel
+            // dgvResumen
             // 
-            diaLabel.AutoSize = true;
-            diaLabel.Location = new System.Drawing.Point(25, 161);
-            diaLabel.Name = "diaLabel";
-            diaLabel.Size = new System.Drawing.Size(24, 13);
-            diaLabel.TabIndex = 5;
-            diaLabel.Text = "dia:";
+            this.dgvResumen.AllowUserToAddRows = false;
+            this.dgvResumen.AllowUserToDeleteRows = false;
+            this.dgvResumen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResumen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResumen.Location = new System.Drawing.Point(431, 12);
+            this.dgvResumen.MultiSelect = false;
+            this.dgvResumen.Name = "dgvResumen";
+            this.dgvResumen.ReadOnly = true;
+            this.dgvResumen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvResumen.Size = new System.Drawing.Size(730, 425);
+            this.dgvResumen.TabIndex = 6;
+            this.dgvResumen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResumen_CellContentClick);
             // 
-            // diaDateTimePicker
+            // lblNombre
             // 
-            this.diaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.horarioBindingSource, "dia", true));
-            this.diaDateTimePicker.Location = new System.Drawing.Point(86, 157);
-            this.diaDateTimePicker.Name = "diaDateTimePicker";
-            this.diaDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.diaDateTimePicker.TabIndex = 6;
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(33, 89);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(30, 13);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Hora";
             // 
-            // button3
+            // cmbHora
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(45, 398);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(271, 37);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.cmbHora.FormattingEnabled = true;
+            this.cmbHora.Location = new System.Drawing.Point(133, 86);
+            this.cmbHora.Name = "cmbHora";
+            this.cmbHora.Size = new System.Drawing.Size(212, 21);
+            this.cmbHora.TabIndex = 5;
             // 
-            // button2
+            // DtpDia
             // 
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(45, 352);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(271, 37);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(45, 303);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(271, 37);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Crear";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.idHorarioTextBox);
-            this.groupBox1.Controls.Add(this.diaDateTimePicker);
-            this.groupBox1.Controls.Add(diaLabel);
-            this.groupBox1.Controls.Add(this.horaTextBox);
-            this.groupBox1.Controls.Add(idHorarioLabel);
-            this.groupBox1.Controls.Add(horaLabel);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(326, 278);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Información";
+            this.DtpDia.Location = new System.Drawing.Point(133, 123);
+            this.DtpDia.Name = "DtpDia";
+            this.DtpDia.Size = new System.Drawing.Size(212, 20);
+            this.DtpDia.TabIndex = 6;
             // 
             // Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(981, 449);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.horarioDataGridView);
+            this.ClientSize = new System.Drawing.Size(1201, 449);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnCrear);
+            this.Controls.Add(this.gpInformacion);
+            this.Controls.Add(this.dgvResumen);
             this.MinimumSize = new System.Drawing.Size(997, 488);
             this.Name = "Horario";
             this.Text = "Horario";
@@ -240,9 +226,9 @@
             this.Load += new System.EventHandler(this.Horario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.horarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horarioDataGridView)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpInformacion.ResumeLayout(false);
+            this.gpInformacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResumen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,16 +239,17 @@
         private System.Windows.Forms.BindingSource horarioBindingSource;
         private EjercicioAlcaldiaDataSetTableAdapters.HorarioTableAdapter horarioTableAdapter;
         private EjercicioAlcaldiaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView horarioDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.TextBox idHorarioTextBox;
-        private System.Windows.Forms.TextBox horaTextBox;
-        private System.Windows.Forms.DateTimePicker diaDateTimePicker;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.GroupBox gpInformacion;
+        private System.Windows.Forms.Label txtDia;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblValorId;
+        private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.DataGridView dgvResumen;
+        private System.Windows.Forms.DateTimePicker DtpDia;
+        private System.Windows.Forms.ComboBox cmbHora;
     }
 }

@@ -69,6 +69,12 @@
     <Compile Include="CRUD\EstadoSolicitud.Designer.cs">
       <DependentUpon>EstadoSolicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD\FrmLugares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\FrmLugares.Designer.cs">
+      <DependentUpon>FrmLugares.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD\institutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\EstadoSolicitud.resx">
       <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\FrmLugares.resx">
+      <DependentUpon>FrmLugares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\institutos.resx">
       <DependentUpon>institutos.cs</DependentUpon>

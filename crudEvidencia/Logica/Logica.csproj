@@ -40,7 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsAsistencia.cs" />
+    <Compile Include="ClsBarrio.cs" />
+    <Compile Include="ClsCurso.cs" />
+    <Compile Include="ClsCursoAsociado.cs" />
+    <Compile Include="ClsEstadoSolicitud.cs" />
+    <Compile Include="ClsHorario.cs" />
+    <Compile Include="ClsHorarioIntermedio.cs" />
+    <Compile Include="ClsInscritos.cs" />
+    <Compile Include="ClsInstituto.cs" />
+    <Compile Include="ClsLugar.cs" />
     <Compile Include="ClsPersona.cs" />
+    <Compile Include="ClsRol.cs" />
+    <Compile Include="ClsRolPersona.cs" />
+    <Compile Include="ClsSecretaria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,47 +10,48 @@ using System.Windows.Forms;
 
 namespace crudEvidencia.CRUD
 {
-    public partial class Horario : Form
+    public partial class FrmLugares : Form
     {
-        public Horario()
+        public FrmLugares()
         {
             InitializeComponent();
         }
 
-        private void Horario_Load(object sender, EventArgs e)
+        private void FrmLugares_Load(object sender, EventArgs e)
         {
             cargarDatos();
-
-
         }
-        public void crearSecrretaria()
+
+        public void crearLugar()
         {
 
-            if ((txtDia.Text).Equals(""))
+            if ((txtNombre.Text).Equals(""))
             {
-                MessageBox.Show("Debe seleccionar una Hora");
+                MessageBox.Show("Debe seleccionar un Lugar");
 
             }
             else
             {
                 
-                Logica.ClsHorario objHorario= new Logica.ClsHorario();
-                objHorario.Hora= txtHora.Text;
-                objHorario.Dia = txtDia.Text;
-                objHorario.insert();
+                Logica.ClsLugar lugar = new Logica.ClsLugar();
+                lugar.Nombre = txtNombre.Text;
+                lugar.Direccion = txtDireccion.Text;
+                lugar.Telefono = txtTelefono.Text;
+                lugar.insert();
                 cargarDatos();
-
+                limpiar();
             }
         }
         public void cargarDatos()
+
         {
 
-            Logica.ClsHorario objHorario= new Logica.ClsHorario();
-            DataSet ds = objHorario.getAll();
+            Logica.ClsLugar lugar = new Logica.ClsLugar();
+            DataSet ds = lugar.getAll();
             dgvResumen.DataSource = ds.Tables[0];
 
         }
-        public int SeleccionarSecreataria()
+        public int SeleccionarLugar()
         {
             int seleccion;
             seleccion = dgvResumen.CurrentRow.Index;
@@ -64,48 +65,53 @@ namespace crudEvidencia.CRUD
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            //SeleccionarSecreataria();
-            crearSecrretaria();
+            //SeleccionarLugar();
+            crearLugar();
         }
 
         private void dgvResumen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            TraerHorario();
+            traerLugar();
         }
 
-        private void TraerHorario()
+        private void traerLugar()
         {
-            Logica.ClsHorario objHorario= new Logica.ClsHorario();
+            Logica.ClsLugar lugar = new Logica.ClsLugar();
             DataSet ds = new DataSet();
-            int widSecretaria = int.Parse(dgvResumen.Rows[SeleccionarSecreataria()].Cells[0].Value.ToString());
-            objHorario.getById(widSecretaria);
-            lblValorId.Text = objHorario.IdHorario.ToString();
-            cmbHora.SelectedItem = objHorario.Hora;
-            DtpDia.Value = DateTime.Parse(""+objHorario.Hora);
-
+            int wIdLugar = int.Parse(dgvResumen.Rows[SeleccionarLugar()].Cells[0].Value.ToString());
+            lugar.getById(wIdLugar);
+            lblValorId.Text = lugar.IdLugar.ToString();
+            txtNombre.Text = lugar.Nombre;
+            txtDireccion.Text = lugar.Direccion;
+            txtTelefono.Text = lugar.Telefono;
+            
         }
-        private void actualizarSecretaria()
+        private void actualizarLugar()
         {
 
-            Logica.ClsHorario objHorario= new Logica.ClsHorario();
-            objHorario.IdHorario = int.Parse(lblValorId.Text);
-            objHorario.Hora = (cmbHora.SelectedValue.ToString());
-            objHorario.Dia = DtpDia.Value;
-            objHorario.update();
+            Logica.ClsLugar lugar = new Logica.ClsLugar();
+            lugar.IdLugar = int.Parse(lblValorId.Text);
+            lugar.Nombre = txtNombre.Text;
+            lugar.Direccion = txtDireccion.Text;
+            lugar.Telefono = txtTelefono.Text;
+            lugar.update();
+
+
 
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            actualizarSecretaria();
+            actualizarLugar();
             cargarDatos();
             limpiar();
         }
         private void limpiar()
         {
             lblValorId.Text = "---";
-            cmbHora.SelectedValue = 0;
-            DtpDia.Value = DateTime.Parse("00-00-0000");
+            txtNombre.Text = "";
+            txtDireccion.Text = "";
+            txtTelefono.Text = "";
             btnActualizar.Enabled = false;
             btnEliminar.Enabled = false;
 
@@ -119,9 +125,9 @@ namespace crudEvidencia.CRUD
 
         private void eliminar()
         {
-            Logica.ClsHorario objHorario= new Logica.ClsHorario();
-            objHorario.IdHorario = int.Parse(lblValorId.Text);
-            objHorario.delete();
+            Logica.ClsLugar lugar = new Logica.ClsLugar();
+            lugar.IdLugar = int.Parse(lblValorId.Text);
+            lugar.delete();
             cargarDatos();
             limpiar();
         }
@@ -130,6 +136,8 @@ namespace crudEvidencia.CRUD
         {
             eliminar();
         }
+
+
 
 
     }

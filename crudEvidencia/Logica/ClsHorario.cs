@@ -31,14 +31,73 @@ namespace Logica
         }
 
 
+
         public DataSet getAll()
         {
             DataSet ds = new DataSet();
             Datos.ClsConexion conn = new Datos.ClsConexion();
             conn.conectar();
-            ds = conn.consultar("select * from view_asistencia");
+            ds = conn.consultar("select * from Horario");
             conn.desconectar();
             return ds;
         }
+
+        public void getById(int WidHorario)
+        {
+            DataSet ds = new DataSet();
+            Datos.ClsConexion conn = new Datos.ClsConexion();
+            conn.conectar();
+            ds = conn.consultar("select * from horario where idHorario = " + WidHorario);
+            idHorario = int.Parse(ds.Tables[0].Rows[0][0].ToString());
+            hora = ds.Tables[0].Rows[0][1].ToString();
+            dia = DateTime.Parse( ds.Tables[0].Rows[0][2].ToString());
+            conn.desconectar();
+            
+
+        }
+
+
+
+        public void insert()
+        {
+
+            Datos.ClsConexion conn = new Datos.ClsConexion();
+            conn.conectar();
+            string consulta = "INSERT INTO [dbo].[horario]([hora],[dia])" +
+             "VALUES('" + hora + "', '" + dia+ "')";
+            conn.ejecutar(consulta);
+            conn.desconectar();
+
+        }
+
+        public void update()
+        {
+            Datos.ClsConexion conn = new Datos.ClsConexion();
+            conn.conectar();
+            string consulta = "update horario set ";
+
+            consulta = consulta + "hora" + " = '" + hora + "', ";
+            consulta = consulta + "dia" + " = '" + dia + "', ";
+            consulta = consulta + "where idsecretaria = " + idHorario;
+
+            conn.ejecutar(consulta);
+            conn.desconectar();
+
+        }
+        public void delete()
+        {
+            Datos.ClsConexion conn = new Datos.ClsConexion();
+            conn.conectar();
+            string consulta = "delete horario ";
+
+            consulta = consulta + "where idHorario= " + idHorario;
+
+            conn.ejecutar(consulta);
+            conn.desconectar();
+
+        }
+
+
+
     }
 }

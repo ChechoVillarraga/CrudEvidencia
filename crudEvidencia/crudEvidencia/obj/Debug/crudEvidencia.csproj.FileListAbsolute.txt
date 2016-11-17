@@ -52,3 +52,14 @@ C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crud
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Login.resources
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.Properties.Resources.resources
 C:\Users\carlos\Desktop\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.csproj.GenerateResource.Cache
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CrudAsistencia.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.barrios.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.CursoAsociado.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.EstadoSolicitud.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.institutos.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.personasRegistradas.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.RegistroPersona.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.Horario.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.secretarias.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.MenuPrincipal.resources
+C:\Users\usuario\Documents\CrudEvidencia\crudEvidencia\crudEvidencia\obj\Debug\crudEvidencia.CRUD.FrmLugares.resources

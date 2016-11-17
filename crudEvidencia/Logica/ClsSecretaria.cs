@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using Datos;
 namespace Logica
 {
    public class ClsSecretaria
@@ -62,6 +63,67 @@ namespace Logica
            return ds;
        }
 
+       public void getById(int WidSecretaria)
+       {
+           DataSet ds = new DataSet();
+           Datos.ClsConexion conn = new Datos.ClsConexion();
+           conn.conectar();
+           ds = conn.consultar("select * from secretarias where idsecretaria = "+WidSecretaria);
+           idSecretaria = int.Parse(ds.Tables[0].Rows[0][0].ToString());
+           nombre = ds.Tables[0].Rows[0][1].ToString();
+           descripcion = ds.Tables[0].Rows[0][2].ToString();
+           direccion = ds.Tables[0].Rows[0][3].ToString();
+           telefono = ds.Tables[0].Rows[0][4].ToString();
+           Email = ds.Tables[0].Rows[0][5].ToString();
+           conn.desconectar();
+           //idSecretaria = ds.Tables[0].Rows[0].ToString();
+           
+       }
+
+
+
+       public void insert()
+       {
+        
+           Datos.ClsConexion conn = new Datos.ClsConexion();
+           conn.conectar();
+           string consulta = "INSERT INTO [dbo].[Secretarias]([nombreSec],[descripcion],[direccion],[telefono],[correo])"+
+            "VALUES('"+nombre+"', '"+descripcion +"', '"+direccion+"', '"+telefono+"', '"+Email+"')";
+
+
+           conn.ejecutar(consulta);
+           conn.desconectar();
+
+       }
+
+       public void update()
+       {
+           Datos.ClsConexion conn = new Datos.ClsConexion();
+           conn.conectar();
+           string consulta = "update SECRETARIAs set ";
+           
+           consulta = consulta + "nombreSec" + " = '" + nombre + "', ";
+           consulta = consulta + "descripcion" + " = '" + descripcion + "', ";
+           consulta = consulta + "direccion" + " = '" + direccion + "', ";
+           consulta = consulta + "telefono" + " = '" + telefono + "', ";
+           consulta = consulta + "correo" + " = '" + Email + "' ";
+           consulta = consulta + "where idsecretaria = " + idSecretaria;
+
+           conn.ejecutar(consulta);
+           conn.desconectar();
+
+       }
+       public void delete() {
+           Datos.ClsConexion conn = new Datos.ClsConexion();
+           conn.conectar();
+           string consulta = "delete SECRETARIAS ";
+
+           consulta = consulta + "where idsecretaria = " + idSecretaria;
+
+           conn.ejecutar(consulta);
+           conn.desconectar();
+
+       }
 
 
     }

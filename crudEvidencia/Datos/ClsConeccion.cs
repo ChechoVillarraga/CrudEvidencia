@@ -21,7 +21,7 @@ namespace Datos
         {
             try
             {
-                conexion = new SqlConnection("Data Source=CARLOS\\CARLOSQL;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
+                conexion = new SqlConnection("Data Source=GILDARDOAGUIRRE\\SQLEXPRESS;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
                 conexion.Open();
             }
             catch (Exception ex)
