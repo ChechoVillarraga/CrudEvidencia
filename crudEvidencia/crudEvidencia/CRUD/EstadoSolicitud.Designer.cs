@@ -56,6 +56,33 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // idEstadoSolicitudLabel
+            // 
+            idEstadoSolicitudLabel.AutoSize = true;
+            idEstadoSolicitudLabel.Location = new System.Drawing.Point(31, 98);
+            idEstadoSolicitudLabel.Name = "idEstadoSolicitudLabel";
+            idEstadoSolicitudLabel.Size = new System.Drawing.Size(97, 13);
+            idEstadoSolicitudLabel.TabIndex = 2;
+            idEstadoSolicitudLabel.Text = "id Estado Solicitud:";
+            // 
+            // estadoLabel
+            // 
+            estadoLabel.AutoSize = true;
+            estadoLabel.Location = new System.Drawing.Point(31, 124);
+            estadoLabel.Name = "estadoLabel";
+            estadoLabel.Size = new System.Drawing.Size(43, 13);
+            estadoLabel.TabIndex = 4;
+            estadoLabel.Text = "Estado:";
+            // 
+            // descripcionLabel
+            // 
+            descripcionLabel.AutoSize = true;
+            descripcionLabel.Location = new System.Drawing.Point(31, 150);
+            descripcionLabel.Name = "descripcionLabel";
+            descripcionLabel.Size = new System.Drawing.Size(66, 13);
+            descripcionLabel.TabIndex = 6;
+            descripcionLabel.Text = "Descripcion:";
+            // 
             // ejercicioAlcaldiaDataSet
             // 
             this.ejercicioAlcaldiaDataSet.DataSetName = "EjercicioAlcaldiaDataSet";
@@ -120,15 +147,6 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // idEstadoSolicitudLabel
-            // 
-            idEstadoSolicitudLabel.AutoSize = true;
-            idEstadoSolicitudLabel.Location = new System.Drawing.Point(31, 98);
-            idEstadoSolicitudLabel.Name = "idEstadoSolicitudLabel";
-            idEstadoSolicitudLabel.Size = new System.Drawing.Size(97, 13);
-            idEstadoSolicitudLabel.TabIndex = 2;
-            idEstadoSolicitudLabel.Text = "id Estado Solicitud:";
-            // 
             // idEstadoSolicitudTextBox
             // 
             this.idEstadoSolicitudTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.estadoSolicitudBindingSource, "idEstadoSolicitud", true));
@@ -137,15 +155,6 @@
             this.idEstadoSolicitudTextBox.Size = new System.Drawing.Size(100, 20);
             this.idEstadoSolicitudTextBox.TabIndex = 3;
             // 
-            // estadoLabel
-            // 
-            estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(31, 124);
-            estadoLabel.Name = "estadoLabel";
-            estadoLabel.Size = new System.Drawing.Size(43, 13);
-            estadoLabel.TabIndex = 4;
-            estadoLabel.Text = "Estado:";
-            // 
             // estadoTextBox
             // 
             this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.estadoSolicitudBindingSource, "Estado", true));
@@ -153,15 +162,6 @@
             this.estadoTextBox.Name = "estadoTextBox";
             this.estadoTextBox.Size = new System.Drawing.Size(100, 20);
             this.estadoTextBox.TabIndex = 5;
-            // 
-            // descripcionLabel
-            // 
-            descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(31, 150);
-            descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(66, 13);
-            descripcionLabel.TabIndex = 6;
-            descripcionLabel.Text = "Descripcion:";
             // 
             // descripcionTextBox
             // 
@@ -176,7 +176,7 @@
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(45, 398);
+            this.button3.Location = new System.Drawing.Point(45, 396);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(271, 37);
             this.button3.TabIndex = 11;

@@ -346,6 +346,7 @@
             this.estadoTextBox.Name = "estadoTextBox";
             this.estadoTextBox.Size = new System.Drawing.Size(100, 21);
             this.estadoTextBox.TabIndex = 10;
+            this.estadoTextBox.SelectedIndexChanged += new System.EventHandler(this.estadoTextBox_SelectedIndexChanged);
             // 
             // barrioTextBox
             // 

@@ -105,5 +105,10 @@ namespace crudEvidencia.CRUD
             PersonaModificar p = new PersonaModificar();
             p.Show();
         }
+
+        private void estadoTextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
