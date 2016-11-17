@@ -41,7 +41,6 @@
             System.Windows.Forms.Label idSecretariaLabel;
             System.Windows.Forms.Label estadoLabel;
             System.Windows.Forms.Label habeasDataLabel;
-            System.Windows.Forms.Label RolLabel;
             this.ejercicioAlcaldiaDataSet = new crudEvidencia.EjercicioAlcaldiaDataSet();
             this.personasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.personasTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.PersonasTableAdapter();
@@ -80,8 +79,6 @@
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.barriosTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.BarriosTableAdapter();
             this.secretariasTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.SecretariasTableAdapter();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RolCheckList = new System.Windows.Forms.CheckedListBox();
             this.RolbindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rolTableAdapter = new crudEvidencia.EjercicioAlcaldiaDataSetTableAdapters.RolTableAdapter();
             this.limpiarBtn = new System.Windows.Forms.Button();
@@ -97,14 +94,12 @@
             idSecretariaLabel = new System.Windows.Forms.Label();
             estadoLabel = new System.Windows.Forms.Label();
             habeasDataLabel = new System.Windows.Forms.Label();
-            RolLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ejercicioAlcaldiaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barriosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secretariasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RolbindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,15 +210,6 @@
             habeasDataLabel.Size = new System.Drawing.Size(73, 13);
             habeasDataLabel.TabIndex = 24;
             habeasDataLabel.Text = "Habeas Data:";
-            // 
-            // RolLabel
-            // 
-            RolLabel.AutoSize = true;
-            RolLabel.Location = new System.Drawing.Point(12, 16);
-            RolLabel.Name = "RolLabel";
-            RolLabel.Size = new System.Drawing.Size(26, 13);
-            RolLabel.TabIndex = 30;
-            RolLabel.Text = "Rol:";
             // 
             // ejercicioAlcaldiaDataSet
             // 
@@ -428,78 +414,91 @@
             this.idPersonaDataGridViewTextBoxColumn.DataPropertyName = "idPersona";
             this.idPersonaDataGridViewTextBoxColumn.HeaderText = "idPersona";
             this.idPersonaDataGridViewTextBoxColumn.Name = "idPersonaDataGridViewTextBoxColumn";
+            this.idPersonaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // documentoIdentidadDataGridViewTextBoxColumn
             // 
             this.documentoIdentidadDataGridViewTextBoxColumn.DataPropertyName = "documentoIdentidad";
             this.documentoIdentidadDataGridViewTextBoxColumn.HeaderText = "documentoIdentidad";
             this.documentoIdentidadDataGridViewTextBoxColumn.Name = "documentoIdentidadDataGridViewTextBoxColumn";
+            this.documentoIdentidadDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nombresDataGridViewTextBoxColumn
             // 
             this.nombresDataGridViewTextBoxColumn.DataPropertyName = "nombres";
             this.nombresDataGridViewTextBoxColumn.HeaderText = "nombres";
             this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // apellidosDataGridViewTextBoxColumn
             // 
             this.apellidosDataGridViewTextBoxColumn.DataPropertyName = "apellidos";
             this.apellidosDataGridViewTextBoxColumn.HeaderText = "apellidos";
             this.apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
+            this.apellidosDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // direccionDataGridViewTextBoxColumn
             // 
             this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
             this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
             this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // barrioDataGridViewTextBoxColumn
             // 
             this.barrioDataGridViewTextBoxColumn.DataPropertyName = "Barrio";
             this.barrioDataGridViewTextBoxColumn.HeaderText = "Barrio";
             this.barrioDataGridViewTextBoxColumn.Name = "barrioDataGridViewTextBoxColumn";
+            this.barrioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // telefonoDataGridViewTextBoxColumn
             // 
             this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
             this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
             this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // correoElectronicoDataGridViewTextBoxColumn
             // 
             this.correoElectronicoDataGridViewTextBoxColumn.DataPropertyName = "correoElectronico";
             this.correoElectronicoDataGridViewTextBoxColumn.HeaderText = "correoElectronico";
             this.correoElectronicoDataGridViewTextBoxColumn.Name = "correoElectronicoDataGridViewTextBoxColumn";
+            this.correoElectronicoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // claveDataGridViewTextBoxColumn
             // 
             this.claveDataGridViewTextBoxColumn.DataPropertyName = "clave";
             this.claveDataGridViewTextBoxColumn.HeaderText = "clave";
             this.claveDataGridViewTextBoxColumn.Name = "claveDataGridViewTextBoxColumn";
+            this.claveDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // claveAntiguaDataGridViewTextBoxColumn
             // 
             this.claveAntiguaDataGridViewTextBoxColumn.DataPropertyName = "claveAntigua";
             this.claveAntiguaDataGridViewTextBoxColumn.HeaderText = "claveAntigua";
             this.claveAntiguaDataGridViewTextBoxColumn.Name = "claveAntiguaDataGridViewTextBoxColumn";
+            this.claveAntiguaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idSecretariaDataGridViewTextBoxColumn
             // 
             this.idSecretariaDataGridViewTextBoxColumn.DataPropertyName = "idSecretaria";
             this.idSecretariaDataGridViewTextBoxColumn.HeaderText = "idSecretaria";
             this.idSecretariaDataGridViewTextBoxColumn.Name = "idSecretariaDataGridViewTextBoxColumn";
+            this.idSecretariaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // estadoDataGridViewTextBoxColumn
             // 
             this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
             this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // habeasDataDataGridViewTextBoxColumn
             // 
             this.habeasDataDataGridViewTextBoxColumn.DataPropertyName = "HabeasData";
             this.habeasDataDataGridViewTextBoxColumn.HeaderText = "HabeasData";
             this.habeasDataDataGridViewTextBoxColumn.Name = "habeasDataDataGridViewTextBoxColumn";
+            this.habeasDataDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // BtnModificar
             // 
@@ -538,24 +537,6 @@
             // 
             this.secretariasTableAdapter.ClearBeforeFill = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(RolLabel);
-            this.groupBox2.Controls.Add(this.RolCheckList);
-            this.groupBox2.Location = new System.Drawing.Point(12, 351);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(239, 108);
-            this.groupBox2.TabIndex = 31;
-            this.groupBox2.TabStop = false;
-            // 
-            // RolCheckList
-            // 
-            this.RolCheckList.FormattingEnabled = true;
-            this.RolCheckList.Location = new System.Drawing.Point(128, 6);
-            this.RolCheckList.Name = "RolCheckList";
-            this.RolCheckList.Size = new System.Drawing.Size(100, 94);
-            this.RolCheckList.TabIndex = 12;
-            // 
             // RolbindingSource
             // 
             this.RolbindingSource.DataMember = "Rol";
@@ -581,7 +562,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 540);
             this.Controls.Add(this.limpiarBtn);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.BtnBorrar);
             this.Controls.Add(this.BtnModificar);
@@ -597,8 +577,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.barriosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secretariasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RolbindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -644,8 +622,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idSecretariaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn habeasDataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckedListBox RolCheckList;
         private System.Windows.Forms.BindingSource RolbindingSource;
         private EjercicioAlcaldiaDataSetTableAdapters.RolTableAdapter rolTableAdapter;
         private System.Windows.Forms.Button limpiarBtn;
