@@ -40,5 +40,18 @@ namespace crudEvidencia
             CRUD.Persona personaOBJ = new CRUD.Persona();
             personaOBJ.Show();
         }
+
+        private void crearBarrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CRUD.barrios barrio = new CRUD.barrios();
+            barrio.Show();
+        }
+
+        private void lugaresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CRUD.FrmLugares objLugar = new CRUD.FrmLugares();
+            objLugar.Show();
+
+        }
     }
 }

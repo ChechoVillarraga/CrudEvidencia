@@ -35,8 +35,8 @@ namespace crudEvidencia.CRUD
             {
                 
                 Logica.ClsHorario objHorario= new Logica.ClsHorario();
-                objHorario.Hora= txtHora.Text;
-                objHorario.Dia = txtDia.Text;
+                objHorario.Hora= cmbHora.Text;
+                objHorario.Dia = DtpDia.Value;
                 objHorario.insert();
                 cargarDatos();
 

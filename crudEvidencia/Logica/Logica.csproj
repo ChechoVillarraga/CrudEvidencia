@@ -50,22 +50,16 @@
     <Compile Include="ClsHorarioIntermedio.cs" />
     <Compile Include="ClsInscritos.cs" />
     <Compile Include="ClsInstituto.cs" />
-<<<<<<< HEAD
     <Compile Include="ClsLugar.cs" />
-=======
->>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b
     <Compile Include="ClsPersona.cs" />
     <Compile Include="ClsRol.cs" />
     <Compile Include="ClsRolPersona.cs" />
     <Compile Include="ClsSecretaria.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="EjercicioAlcaldiaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EjercicioAlcaldiaDataSet.xsd</DependentUpon>
     </Compile>
->>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

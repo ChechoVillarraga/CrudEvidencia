@@ -38,9 +38,7 @@ namespace crudEvidencia.CRUD
             estadoTextBox.Items.Insert(0, "Inhabilitado");
             estadoTextBox.Items.Insert(1, "Habilitado");
 
-            ((ListBox)RolCheckList).DataSource = RolbindingSource;
-            ((ListBox)RolCheckList).DisplayMember = "Rol";
-            ((ListBox)RolCheckList).ValueMember = "idRol";
+
 
 
         }

@@ -31,9 +31,7 @@ namespace crudEvidencia.CRUD
             // TODO: This line of code loads data into the 'ejercicioAlcaldiaDataSet.Personas' table. You can move, or remove it, as needed.
             this.personasTableAdapter.Fill(this.ejercicioAlcaldiaDataSet.Personas);
             // TODO: This line of code loads data into the 'ejercicioAlcaldiaDataSet.Secretarias' table. You can move, or remove it, as needed.
-            this.secretariasTableAdapter.Fill(this.ejercicioAlcaldiaDataSet.Secretarias);
-            // TODO: This line of code loads data into the 'ejercicioAlcaldiaDataSet.Barrios' table. You can move, or remove it, as needed.
-            this.barriosTableAdapter.Fill(this.ejercicioAlcaldiaDataSet.Barrios);
+            
             habeasDataTextBox.Items.Insert(0, "No Acepta");
             habeasDataTextBox.Items.Insert(1, "Si Acepta");
             estadoTextBox.Items.Insert(0, "Inhabilitado");

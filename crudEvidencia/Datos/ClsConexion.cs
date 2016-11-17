@@ -21,11 +21,10 @@ namespace Datos
         {
             try
             {
-<<<<<<< HEAD:crudEvidencia/Datos/ClsConeccion.cs
+
                 conexion = new SqlConnection("Data Source=GILDARDOAGUIRRE\\SQLEXPRESS;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
-=======
-                conexion = new SqlConnection("Data Source=DESKTOP-QU7FNVF\\SQLEXPRESS;Initial Catalog=EjercicioAlcaldia;Integrated Security=true");
->>>>>>> d17bbc63b441831895d14870d3aa1e6ff9fc7b1b:crudEvidencia/Datos/ClsConexion.cs
+
+
                 conexion.Open();
             }
             catch (Exception ex)

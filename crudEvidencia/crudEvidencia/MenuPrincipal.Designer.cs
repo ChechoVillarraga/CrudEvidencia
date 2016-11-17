@@ -46,6 +46,7 @@
             this.inscritosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lugaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,8 @@
             this.personasToolStripMenuItem,
             this.rolesToolStripMenuItem,
             this.asignarRolToolStripMenuItem,
-            this.crearBarrioToolStripMenuItem});
+            this.crearBarrioToolStripMenuItem,
+            this.lugaresToolStripMenuItem});
             this.personasYRolesToolStripMenuItem.Name = "personasYRolesToolStripMenuItem";
             this.personasYRolesToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.personasYRolesToolStripMenuItem.Text = "Personas y Roles";
@@ -98,6 +100,7 @@
             this.crearBarrioToolStripMenuItem.Name = "crearBarrioToolStripMenuItem";
             this.crearBarrioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.crearBarrioToolStripMenuItem.Text = "Crear Barrio";
+            this.crearBarrioToolStripMenuItem.Click += new System.EventHandler(this.crearBarrioToolStripMenuItem_Click);
             // 
             // cursosToolStripMenuItem
             // 
@@ -186,6 +189,13 @@
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 
+            // lugaresToolStripMenuItem
+            // 
+            this.lugaresToolStripMenuItem.Name = "lugaresToolStripMenuItem";
+            this.lugaresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lugaresToolStripMenuItem.Text = "Lugares";
+            this.lugaresToolStripMenuItem.Click += new System.EventHandler(this.lugaresToolStripMenuItem_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +236,6 @@
         private System.Windows.Forms.ToolStripMenuItem inscritosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solicitudesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lugaresToolStripMenuItem;
     }
 }
